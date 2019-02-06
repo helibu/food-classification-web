@@ -6,5 +6,5 @@ We trained a model with food-101 database with a top 1 accuracy of 91% on traini
 ## Web 
 We use Flask to run test on some images.
 
-<img href="https://github.com/helibu/food-classification-web/blob/master/food.gif">
+![](https://github.com/helibu/food-classification-web/blob/master/food.gif)
 
