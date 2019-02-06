@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Classification</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <h2 style="margin: auto;width: 80%; text-align: center; margin-top: 20px;  text-transform: uppercase">Food Classification</h2>
+<div style="width: 90%; margin: auto; text-align: center">
+    <img src="{{ url_for('send_file', filename=image_file_name)}}" style ="max-width: 250px; max-height: 450px; margin-top: 30px; margin-bottom: 10px">
+    <p style="font-style: italic">{{ image_file_name }}</p>
+
+    <p style="margin-top: 40px"><b>Predicted Label:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="color: green"></span>Accuracy: <span style="color: green;"> </span></b></p>
+
+
+    <p><b><span style="color: green">{{ prediction[0][0] }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style="color: green;">{{ accuracy[0]}}%</span></b></p>
+    <p><b><span style="color: green">{{ prediction[1][0] }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style="color: green;">{{ accuracy[1]}}%</span></b></p>
+    <p><b><span style="color: green">{{ prediction[2][0] }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style="color: green;">{{ accuracy[2]}}%</span></b></p>
+    <p><b><span style="color: green">{{ prediction[3][0] }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style="color: green;">{{ accuracy[3]}}%</span></b></p>
+    <p><b><span style="color: green">{{ prediction[4][0] }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style="color: green;">{{ accuracy[4]}}%</span></b></p>
+
+     <a href="/">Back to Home</a>
+</div>
+</body>
+
+</html>
